@@ -3,6 +3,7 @@
 // Implement this (visitor pattern)
 void Tiger::accept(Visitor &visitor)
 {
+    visitor.visit(*this); // implementeret fra github
 }
 
 // Implement this (Observer part)
