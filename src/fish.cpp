@@ -9,4 +9,5 @@ void Fish::accept(Visitor &visitor)
 // Implement this (Observer part)
 void Fish::clean_teeth()
 {
+    notify(AnimalEvent::FishTeethCleaned); //implementeret her også
 }

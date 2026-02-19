@@ -9,15 +9,18 @@ AnimalRightsGroup::AnimalRightsGroup(int n_monkeys, int n_tigers, int n_fish)
 // Implement this (Observer part)
 void AnimalRightsGroup::update(AnimalEvent event)
 {
-    if (event == AnimalEvent::MonkeyFed)
+    switch (event) // vi har lavet det om til en switch, da det er langt sejere og hurtigere.
     {
-    }
-    else if (event == AnimalEvent::TigerScratched)
-    {
-    }
-    else if (event == AnimalEvent::FishTeethCleaned)
-    {
-    }
+    case MonkeyFed:
+        n_monkeys_fed++;
+        break;
+    case TigerScratched:
+        n_tigers_scratched++;
+        break;
+    case FishTeethCleaned:
+        n_fish_teeth_brushed++;
+        break;
+     }
 }
 
 bool AnimalRightsGroup::animals_ok()

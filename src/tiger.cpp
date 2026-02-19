@@ -9,4 +9,5 @@ void Tiger::accept(Visitor &visitor)
 // Implement this (Observer part)
 void Tiger::scratch_back()
 {
+    notify(AnimalEvent::TigerScratched); //implementeret her også
 }

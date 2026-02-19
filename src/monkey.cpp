@@ -9,4 +9,5 @@ void Monkey::accept(Visitor &visitor)
 // Implement this (Observer part)
 void Monkey::feed_banana()
 {
+    notify(AnimalEvent::MonkeyFed); //implementeret her også
 }
